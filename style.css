@@ -317,15 +317,9 @@ header {
         width: 370px;
         margin-bottom: 3rem;
     }
-    .hero-right {
-        margin-top: -1rem;
-    }
-    .hero-right img  {
+    .hero-right img {
         display: none;
-        width: 400px;
-        height: 300px;
     }
-    
 
 
 }
