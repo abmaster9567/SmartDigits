@@ -282,7 +282,7 @@ header {
         margin-left: 10px;
     }
     .hero-content h4 {
-        margin-bottom: 0;
+        margin-bottom: -0.4rem;
         
     }
 
@@ -290,6 +290,11 @@ header {
         font-weight: 700;
         font-size: 2rem;
         width: 380px;
+    }
+    .hero-content p {
+        line-height: 1.5;
+        width: 370px;
+        margin-bottom: 3rem;
     }
 
     .hero-right img {
