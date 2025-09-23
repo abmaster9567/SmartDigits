@@ -52,6 +52,7 @@ header {
 
 }
 
+
 .navlist {
     list-style-type: none;
 
@@ -120,7 +121,7 @@ header {
     margin-right: -6rem;
 }
 
-.menu .menu-icon {
+.nav-toggle .menu-icon {
     color: #fff;
     display: none;
 }
@@ -139,15 +140,31 @@ header {
 
     }
 
+
     nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #6c4efb;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 0;
         display: none;
+    }
+    .navshow {
+        display: flex;
     }
 
     .nav-cta {
         display: none;
     }
+    .nav-toggle {
+        display: block;
+    }
 
-    .menu .menu-icon {
+    .nav-toggle .menu-icon {
         display: block;
         margin-left: -50px;
 
@@ -300,8 +317,17 @@ header {
         width: 370px;
         margin-bottom: 3rem;
     }
-
+    .hero-right {
+        margin-top: -1rem;
+    }
+    .hero-right img  {
+        display: none;
+        width: 400px;
+        height: 300px;
+    }
     
+
+
 }
 
 .services {
@@ -841,8 +867,9 @@ header {
     gap: 40px;
     box-shadow: 0 30px 60px rgba(12, 10, 20, 0.06);
     align-items: start;
-    
+
 }
+
 .faq-left-content {
     margin-top: 6rem;
 }
@@ -879,7 +906,7 @@ header {
     font-weight: 500;
     font-size: 1rem;
     width: 400px;
-   
+
 }
 
 
@@ -967,6 +994,7 @@ header {
 .faq-card:first-child {
     background: linear-gradient(180deg, #fbfbfe, #f7f7ff);
 }
+
 @media (max-width: 480px) {
     .faq-container {
         display: flex;
@@ -974,9 +1002,10 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-      
-        
+
+
     }
+
     .faq-left-content {
         display: flex;
         justify-content: center;
@@ -984,22 +1013,24 @@ header {
         flex-flow: column wrap;
         margin-top: -2rem;
     }
+
     .faq-heading {
         width: 350px;
         font-size: 1.4rem;
         text-align: center;
         margin-top: -0.5rem;
     }
+
     .faq-sub-heading {
         width: 380px;
         font-size: 0.9rem;
         text-align: center;
         margin-top: -0.5rem;
     }
-   
+
     .faq-card {
         width: 340px;
 
     }
-    
+
 }

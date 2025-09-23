@@ -12,7 +12,7 @@
     <title>SmartDigits - Your Shortcut To Instant OTPs</title>
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
-
+    
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <div class="logo">
             <img src="https://i.ibb.co/DPQkz9xP/Smart-Digits-B-2-2.png" alt="Smart-Digits-logo">
         </div>
-        <nav class="navbar">
+        <nav class="navbar" id="mobileNav">
             <ul class="navlist">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
@@ -32,8 +32,8 @@
         <div class="nav-cta">
             <a class="cta" href="#">Contact Us</a>
         </div>
-        <div class="menu">
-            <i class="menu-icon" data-lucide="menu"></i>
+        <div class="nav-toggle" id="navToggle">
+            <i class="menu-icon" id="menuToggle" data-lucide="menu"></i>
         </div>
 
     </header>
@@ -179,6 +179,7 @@
         <div class="faq-card">
           <button class="faq-head" aria-expanded="false">
             <span>How do I fund my wallet?</span>
+             <span class="chev">
              <i class="hcard-icon" data-lucide="circle-plus"></i>
             </span>
           </button>
@@ -190,6 +191,7 @@
         <div class="faq-card">
           <button class="faq-head" aria-expanded="false">
             <span> How fast will I receive my OTP?</span>
+             <span class="chev">
              <i class="hcard-icon" data-lucide="circle-plus"></i>
             </span>
           </button>
@@ -201,6 +203,7 @@
         <div class="faq-card">
           <button class="faq-head" aria-expanded="false">
             <span>Which apps and platforms can I verify?</span>
+             <span class="chev">
             <i class="hcard-icon" data-lucide="circle-plus"></i>
             </span>
           </button>
@@ -211,6 +214,7 @@
         <div class="faq-card">
           <button class="faq-head" aria-expanded="false">
             <span>Do you offer customer support?</span>
+             <span class="chev">
             <i class="hcard-icon" data-lucide="circle-plus"></i>
             </span>
           </button>
@@ -221,6 +225,7 @@
         <div class="faq-card">
           <button class="faq-head" aria-expanded="false">
             <span>Are your services affordable?</span>
+             <span class="chev">
             <i class="hcard-icon" data-lucide="circle-plus"></i>
             </span>
           </button>
@@ -236,40 +241,14 @@
 
 
     </main>
-    <script>
-        lucide.createIcons();
-    </script>
-    <script>
-        // Simple accessible accordion behavior
-document.querySelectorAll('.faq-card').forEach(card => {
-  const btn = card.querySelector('.faq-head');
-  const panel = card.querySelector('.faq-body');
 
-  btn.addEventListener('click', () => {
-    const expanded = btn.getAttribute('aria-expanded') === 'true';
+<script>
+lucide.createIcons();
+</script>
+<script src="toggle.js"></script>
 
-    // close any open panels if you want only one open at a time
-    document.querySelectorAll('.faq-head[aria-expanded="true"]').forEach(openBtn => {
-      if(openBtn !== btn){
-        openBtn.setAttribute('aria-expanded', 'false');
-        const p = openBtn.closest('.faq-card').querySelector('.faq-body');
-        p.hidden = true;
-        p.style.display = 'none';
-      }
-    });
 
-    if (expanded) {
-      btn.setAttribute('aria-expanded', 'false');
-      panel.hidden = true;
-      panel.style.display = 'none';
-    } else {
-      btn.setAttribute('aria-expanded', 'true');
-      panel.hidden = false;
-      panel.style.display = 'block';
-    }
-  });
-});
-    </script>
+
 </body>
 
 </html>
