@@ -403,12 +403,12 @@ header {
 }
 
 .service-card {
-    background-color: #ededed;
-    color: #000;
+    background-color: #fff;
+    color: #333;
     padding: 20px;
     max-width: 250px;
     height: 200px;
-    /*box-shadow: 0 8px 10px rgba(107, 107, 107, 0.08);*/
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
     position: relative;
     display: inline-block;
@@ -418,6 +418,13 @@ header {
     transform: color 0.3s ease;
 
 }
+.service-card .scard-icon {
+     width: 40px;
+    height: 40px;
+    stroke: var(--primary-color);
+
+}
+
 
 .service-card::before {
     content: "";
@@ -439,6 +446,10 @@ header {
 
 .service-card:hover {
     color: #fff;
+    stroke: currentColor;
+}
+.service-card:hover .scard-icon {
+    stroke: #fff;
 }
 
 .service-card:hover::after {
@@ -456,6 +467,7 @@ header {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
+    margin-top: -1.5rem;
 
 }
 
@@ -698,8 +710,9 @@ header {
     }
 
     .how-it-text p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         width: 350px;
+        line-height: 1.3;
     }
 
 }
@@ -796,6 +809,9 @@ header {
     .t-header h3 {
         font-size: 1.5rem;
         
+    }
+    .t-header p {
+        font-size: 0.7rem;
     }
 }
 
