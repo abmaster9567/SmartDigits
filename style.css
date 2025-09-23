@@ -301,7 +301,7 @@ header {
         margin-bottom: 3rem;
     }
 
-    .hero-right img {}
+    
 }
 
 .services {
@@ -883,7 +883,7 @@ header {
 }
 
 
-.right {
+.faq-right {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -972,6 +972,8 @@ header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
       
         
     }
@@ -993,6 +995,11 @@ header {
         font-size: 0.9rem;
         text-align: center;
         margin-top: -0.5rem;
+    }
+   
+    .faq-card {
+        width: 340px;
+
     }
     
 }
