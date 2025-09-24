@@ -112,7 +112,7 @@ header {
 .nav-cta a {
     text-decoration: none;
     padding: 10px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #fff;
     color: var(--gradient-deep-blue);
     font-family: "Montserrat", sans-serif;
@@ -153,6 +153,7 @@ header {
         padding: 20px 0;
         display: none;
     }
+
     .navshow {
         display: flex;
     }
@@ -160,6 +161,7 @@ header {
     .nav-cta {
         display: none;
     }
+
     .nav-toggle {
         display: block;
     }
@@ -184,6 +186,9 @@ header {
     padding-top: 100px;
     margin: auto;
     background-color: var(--gradient-deep-blue);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
 
 }
 
@@ -317,12 +322,167 @@ header {
         width: 370px;
         margin-bottom: 3rem;
     }
+
     .hero-right img {
         display: none;
     }
 
 
 }
+
+.supported {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.su-header h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px;
+    width: 250px;
+    text-align: center;
+    
+
+}
+.su-icon {
+     vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    margin-right: 0.5rem;
+    
+}
+
+.social-media-carousel {
+    overflow: hidden;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    width: fit-content;
+    animation: scrollLeft 40s linear infinite;
+}
+
+.social-card {
+    background: #fff;
+    padding: 16px;
+    margin: 0 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 120px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.social-card:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+/* Specific fix for white Snapchat logo */
+.snapchat-icon {
+    background: #fffc00;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+/* Color filters for each platform */
+.social-card:nth-child(1) .icon {
+    filter: invert(23%) sepia(88%) saturate(747%) hue-rotate(183deg) brightness(92%) contrast(91%);
+}
+
+/* FB */
+.social-card:nth-child(2) .icon {
+    filter: invert(41%) sepia(76%) saturate(1844%) hue-rotate(175deg) brightness(94%) contrast(101%);
+}
+
+/* Twitter */
+.social-card:nth-child(3) .icon {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(97%) saturate(746%) hue-rotate(303deg) brightness(97%) contrast(102%);
+}
+
+/* Instagram */
+.social-card:nth-child(4) .icon {
+    filter: invert(29%) sepia(57%) saturate(1312%) hue-rotate(176deg) brightness(94%) contrast(101%);
+}
+
+/* LinkedIn */
+.social-card:nth-child(5) .icon {
+    filter: invert(15%) sepia(97%) saturate(6483%) hue-rotate(1deg) brightness(98%) contrast(119%);
+}
+
+/* YouTube */
+.social-card:nth-child(6) .icon {
+    filter: invert(34%) sepia(84%) saturate(885%) hue-rotate(321deg) brightness(95%) contrast(101%);
+}
+
+/* Pinterest */
+.social-card:nth-child(8) .icon {
+    filter: invert(28%) sepia(74%) saturate(360%) hue-rotate(340deg) brightness(93%) contrast(92%);
+}
+
+/* Reddit */
+.social-card:nth-child(9) .icon {
+    filter: invert(0%) sepia(2%) saturate(7500%) hue-rotate(346deg) brightness(96%) contrast(100%);
+}
+
+/* TikTok */
+.social-card:nth-child(10) .icon {
+    filter: invert(62%) sepia(70%) saturate(514%) hue-rotate(81deg) brightness(97%) contrast(92%);
+}
+
+/* WhatsApp */
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .supported {
+        margin-bottom: 4rem;
+        
+    }
+    .social-card {
+        font-size: 12px;
+        padding: 12px;
+        margin: 0 6px;
+        min-width: 80px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
 
 .services {
     background-color: #fff;
