@@ -186,9 +186,6 @@ header {
     padding-top: 100px;
     margin: auto;
     background-color: var(--gradient-deep-blue);
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-
 
 }
 
@@ -351,15 +348,16 @@ header {
     padding: 5px;
     width: 250px;
     text-align: center;
-    
+
 
 }
+
 .su-icon {
-     vertical-align: middle;
+    vertical-align: middle;
     width: 14px;
     height: 14px;
     margin-right: 0.5rem;
-    
+
 }
 
 .social-media-carousel {
@@ -467,8 +465,9 @@ header {
 @media (max-width: 480px) {
     .supported {
         margin-bottom: 4rem;
-        
+
     }
+
     .social-card {
         font-size: 12px;
         padding: 12px;
@@ -1190,4 +1189,278 @@ header {
 
     }
 
+}
+
+/* Contact Support Block - SmartDigits */
+.contact-block {
+    padding: 28px 16px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+   
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 980px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(11, 24, 48, 0.06);
+    padding: 22px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-sizing: border-box;
+}
+
+/* Left column */
+.contact-left {
+    flex: 1;
+    min-width: 0;
+}
+
+.ct-icon {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    stroke: var(--primary-color);
+    margin-right: 0.7rem;
+}
+
+.contact-title {
+    font-size: 1.35rem;
+    margin: 0 0 6px;
+    color: #111827;
+    font-weight: 700;
+}
+
+.contact-sub {
+    margin: 0 0 14px;
+    color: #6b7280;
+    font-size: 0.98rem;
+    line-height: 1.4;
+}
+
+
+.avatars {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-top: 6px;
+}
+
+.avatars img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 16px rgba(2, 6, 23, 0.08);
+    object-fit: cover;
+    margin-left: -12px;
+    /* overlap */
+}
+
+/* Right column */
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 180px;
+}
+
+/* CTA button */
+.contact-cta {
+    display: inline-block;
+    background: linear-gradient(90deg, #002CED, #000051);
+    color: #fff;
+    padding: 12px 26px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.98rem;
+    box-shadow: 0 8px 20px rgba(90, 90, 255, 0.18);
+    transition: transform .14s ease, box-shadow .14s ease;
+}
+
+.contact-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 90, 255, 0.22);
+}
+
+.contact-note {
+    margin: 0;
+    color: #9ca3af;
+    font-size: 0.86rem;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .contact-card {
+        flex-direction: column;
+        padding: 18px;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .contact-right {
+        width: 100%;
+    }
+
+    .contact-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .avatars img {
+        width: 44px;
+        height: 44px;
+
+
+    }
+}
+
+.ft-cta {
+    background: linear-gradient(90deg, #002CED, #000051);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 12px;
+    margin: 60px auto;
+    max-width: 1150px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.cta-container h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.cta-container p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #e0e6f5;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.cta-buttons .btn-primary {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    overflow: hidden;
+    z-index: 0;
+    transform: color 0.3s ease;
+}
+
+.cta-buttons .btn-primary::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: top 0.4s ease;
+    border-radius: inherit;
+}
+
+.cta-buttons .btn-primary:hover {
+    color: #fff;
+}
+
+.cta-buttons .btn-primary:hover::before {
+    top: 0;
+
+}
+
+.cta-buttons .btn-primary:hover::after {
+    bottom: 0;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #1e4db7;
+}
+
+.cta-buttons .btn-secondary {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    overflow: hidden;
+    z-index: 0;
+    transform: color 0.3s ease;
+}
+
+.cta-buttons .btn-secondary::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #fff;
+    transition: top 0.4s ease;
+    border-radius: inherit;
+}
+
+.cta-buttons .btn-secondary:hover {
+    color: #000;
+}
+
+.cta-buttons .btn-secondary:hover::before {
+    top: 0;
+
+}
+
+.cta-buttons .btn-secondary:hover::after {
+    bottom: 0;
+}
+
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    color: #0a1930;
+}
+
+.cta small {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+@media (max-width: 480px)  {
+    .cta-container h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
