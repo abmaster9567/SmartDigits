@@ -1197,7 +1197,7 @@ header {
     display: flex;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
-   
+
 }
 
 .contact-card {
@@ -1352,6 +1352,7 @@ header {
     gap: 15px;
     margin-bottom: 20px;
 }
+
 .cta-buttons .btn-primary {
     position: relative;
     display: inline-block;
@@ -1458,9 +1459,92 @@ header {
     font-size: 0.9rem;
     color: #cbd5e1;
 }
-@media (max-width: 480px)  {
+
+@media (max-width: 480px) {
     .cta-container h2 {
         font-size: 1.2rem;
         text-align: center;
     }
+}
+
+.footer {
+    background: var(--gradient-deep-blue);
+    color: #cbd5e1;
+    padding: 50px 20px 20px;
+    margin-top: 60px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+.footer-about {
+    flex: 1 1 250px;
+}
+
+.footer-about .footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.footer-links {
+    flex: 1 1 200px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #cbd5e1;
+    transition: color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #1e293b;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #fff;
 }
